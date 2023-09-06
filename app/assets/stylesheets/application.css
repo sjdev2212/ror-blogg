@@ -1,88 +1,185 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-body{
-    background-color: #040303;
-    color: #fff;
-    font-family: 'Ubuntu', sans-serif;
+body {
+  background-color: #040303;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
 }
- 
-/*HOME---*/
+
+/* HOME--- */
 .home-container {
+  width: 100%;
+  background-color: #272727;
+  height: 44vw;
+  color: #fffdfd;
+  border-radius: 10px;
+  margin: 10px auto;
+}
 
-    width: 100%;
-    background-color: #272727;
-    height: 44vw;
-    color: #fffdfd;
-    border-radius: 10px;
-    margin: 10px auto;
-
-} 
-.home-title{
-    color: #6EEB83;
-    text-decoration: underline;
+.home-title {
+  color: #6eeb83;
+  text-decoration: underline;
 }
 
 .home-h3 {
-    color: #6EEB83;
-    text-align: center;
-    text-decoration: underline;
-}
-.home-paragraph{
-    font-size: 1.1vw;
-    font-weight: 600;
-    text-align: center;
-    margin: 0 1vw;
-    padding: 0;
-    color: whitesmoke;
-    line-height: 1.7vw;
+  color: #6eeb83;
+  text-align: center;
+  text-decoration: underline;
 }
 
-
-
+.home-paragraph {
+  font-size: 1.1vw;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 1vw;
+  padding: 0;
+  color: whitesmoke;
+  line-height: 1.7vw;
+}
 
 .home-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-
-  }
-
-.signup-btn{
-    position: relative;
-    bottom: 43vw;
-    right : 46vw;
-    height: 3vw;
-    width: 6vw;
-    border: 1px solid whitesmoke;
-    border-radius: 5px;
-    background-color: #6EEB83;
-    color: #0D1D10;
-    font-size: 1.2vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;  
-    font-weight: bold;
-    font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
-.signin-btn{
+.signup-btn {
+  position: relative;
+  bottom: 43vw;
+  right: 46vw;
+  height: 3vw;
+  width: 6vw;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  background-color: #6eeb83;
+  color: #0d1d10;
+  font-size: 1.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.signin-btn {
+  position: relative;
+  bottom: 46vw;
+  left: 46vw;
+  height: 3vw;
+  width: 6vw;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  background-color: #6eeb83;
+  color: #0d1d10;
+  font-size: 1.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* SIGNUP--- */
+.signup-container{
+   display: flex;
+   background-color: #272727;
+    height: 43vw;
+    border-radius: 10px;
+   
+    
+}
+.signup-title{
+
+    writing-mode: vertical-rl; /* Vertical writing mode, right to left */
+    text-orientation: mixed; /* Allows characters to stay upright */
+    white-space: nowrap; /* Prevents text from wrapping */
+    transform: rotate(180deg); /* Rotates the element 180 degrees */
+    transform-origin: center;
+    color: whitesmoke;
+    font-size: 5vw;
+    font-weight: bold;
     position: relative;
-    bottom: 46vw;
-    left : 46vw;
+    top: 12vw;
+    left: 8vw;
+}
+.signup-text{
+    border-right: 2px solid #6eeb83;
+    background-image: url(signup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 43vw;
+    width: 40vw;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+}   
+.signup-form{
+
+    height: 43vw;
+    width: 65vw;
+    padding: 0 7vw;
+}
+
+.field input{
+
+    width: 50vw;
     height: 3vw;
-    width: 6vw;
-    border: 1px solid whitesmoke;
     border-radius: 5px;
-    background-color: #6EEB83;
-    color: #0D1D10;
+    border: 1px solid #6eeb83;
+    background-color: #272727;
+    color: whitesmoke;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin: 1vw 0;
+    padding: 0 1vw;
+   
+
+}
+input:focus {
+    border: 2px solid whitesmoke; /* Change the border color and width */
+    outline: none; /* Remove the default focus outline (optional) */
+    /* Add any other styles you want when the input is in focus */
+  }
+.field label{
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 1vw 0;
+    padding: 0 1vw;
+  
+}
+
+.btn-group{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0;
+
+
+
+
+
+}
+.submit-btn{
+    height: 3vw;
+    width: 10vw;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    background-color: #6eeb83;
+    color: #0d1d10;
     font-size: 1.2vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;  
+    text-decoration: none;
     font-weight: bold;
-    font-family: 'Ubuntu', sans-serif;
+   
+}
+.sign-link{
+    color: #6eeb83;
+    text-decoration: none;
 }
