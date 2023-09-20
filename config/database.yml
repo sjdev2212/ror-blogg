@@ -84,3 +84,4 @@ production:
   database: ror_blogg_production
   username: ror_blogg
   password: <%= ENV["ROR_BLOGG_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>

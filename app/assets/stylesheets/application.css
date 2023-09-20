@@ -63,6 +63,12 @@ body {
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
 }
+.signup-btn:hover{
+    background-color: #0d1d10;
+    color: #6eeb83;
+    border: 1px solid #6eeb83;
+    transition: 0.5s;   
+}
 
 .signin-btn {
   position: relative;
@@ -81,6 +87,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
+}
+.signin-btn:hover{
+    background-color: #0d1d10;
+    color: #6eeb83;
+    border: 1px solid #6eeb83;
+    transition: 0.5s;   
 }
 
 /* SIGNUP--- */
@@ -179,7 +191,168 @@ input:focus {
     font-weight: bold;
    
 }
+.submit-btn:hover{
+    background-color: #0d1d10;
+    color: #6eeb83;
+    border: 1px solid #6eeb83;
+    transition: 0.5s;   
+}
 .sign-link{
     color: #6eeb83;
     text-decoration: none;
 }
+/*LOGIN--- */
+.login-container{
+    display: flex;
+    background-color: #272727;
+     height: 43vw;
+     border-radius: 10px;
+    
+}
+.login-text{
+    border-right: 2px solid #6eeb83;
+    background-image: url(signup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 43vw;
+    width: 40vw;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+}   
+.login-title{
+
+    writing-mode: vertical-rl; /* Vertical writing mode, right to left */
+    text-orientation: mixed; /* Allows characters to stay upright */
+    white-space: nowrap; /* Prevents text from wrapping */
+    transform: rotate(180deg); /* Rotates the element 180 degrees */
+    transform-origin: center;
+    color: whitesmoke;
+    font-size: 5vw;
+    font-weight: bold;
+    position: relative;
+    top: 12vw;
+    left: 7vw;
+}
+.login-form{
+
+    height: 43vw;
+    width: 65vw;
+    padding: 0 7vw;
+}
+.field-log input{
+
+    width: 50vw;
+    height: 3vw;
+    border-radius: 5px;
+    border: 1px solid #6eeb83;
+    background-color: #0a0000;
+    color: rgb(111, 109, 109);
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin: 1vw 0;
+    padding: 0 1vw;
+   
+
+}
+input:focus {
+    border: 2px solid whitesmoke; /* Change the border color and width */
+    outline: none; /* Remove the default focus outline (optional) */
+    /* Add any other styles you want when the input is in focus */
+  }
+.field-log label{
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 1vw 0;
+    padding: 0 1vw;
+  
+}
+/*Forgot Password--- */
+.for-password{
+
+    display: flex;
+  flex-direction: column;
+   border:1px solid #6eeb83;
+   height: 35vw;
+   width: 45vw;
+    border-radius: 10px;
+    background-color: #272727;
+    margin: 5vw auto;
+    padding: 0 5vw;
+}
+.field-forgot input{
+
+    width: 40vw;
+    height: 3vw;
+    border-radius: 5px;
+    border: 1px solid #6eeb83;
+    background-color: #272727;
+    color: whitesmoke;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin: 1vw 0;
+    padding: 0 1vw;
+   
+
+}
+input:focus {
+    border: 2px solid whitesmoke; /* Change the border color and width */
+    outline: none; /* Remove the default focus outline (optional) */
+    /* Add any other styles you want when the input is in focus */
+  }
+    
+.btn-forgot{
+    height: 3vw;
+    width: 16vw;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    background-color: #6eeb83;
+    color: #0d1d10;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+.btn-forgot:hover{
+    background-color: #0d1d10;
+    color: #6eeb83;
+    border: 1px solid #6eeb83;
+    transition: 0.5s;   
+}
+/*DASHBOARD--- */
+.signing{
+    border: 3px solid pink;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 10px;
+    background-color: #272727;  
+    margin: 0 auto;
+    position: relative;
+    top: 5vw;
+    left: 5vw;
+    color: #6eeb83;
+    font-size: 1.5vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes slideFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .animated-div {
+    animation: slideFromTop 1s ease-in-out 0.8s; 
+
+  }
+  

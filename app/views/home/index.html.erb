@@ -1,4 +1,6 @@
 <main class="home-container">
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 <div class="home-text">
 <h1 class="home-title"> Welcome to ArticleHub </h1>
 <h3 class="home-h3">Unlock the World of Knowledge and Creativity
@@ -39,9 +41,6 @@ Join us today and let your words shine on ArticleHub!
 
 
 
-<%if  user_signed_in? %>
-<%= button_to "Log out",  destroy_user_session_path, method: :delete %>
-<% else %>
 
 
 
@@ -49,7 +48,7 @@ Join us today and let your words shine on ArticleHub!
 <%= link_to "Sign up",  new_user_registration_path, class:"signup-btn" %>
 <%= link_to "Log in",   new_user_session_path, class:"signin-btn"   %>
 
-<% end %>
+
 
 </div>
 </main>
