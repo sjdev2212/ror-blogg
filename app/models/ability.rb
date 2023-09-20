@@ -12,11 +12,17 @@ class Ability
 
     can :read, Article, user: user
     can :update, Article, user: user
+    can :create, Article
+    can :destroy, Article, user: user
 
-    return unless user.admin?
+    return unless user.is_admin?
 
     can :read, Article
     can :update, Article
+    can :create, Article
+    can :destroy, Article
+    can :manage, :all
+    
     #
     # The first argument to `can` is the action you are giving the user
     # permission to do.
