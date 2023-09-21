@@ -1,55 +1,76 @@
 <main class="home-container">
+<div class="btns">
+<%= link_to "Sign up",  new_user_registration_path, class:"signup-btn" %>
+<%= link_to "Log in",   new_user_session_path, class:"signin-btn"   %>
+</div>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
-<div class="home-text">
-<h1 class="home-title"> Welcome to ArticleHub </h1>
-<h3 class="home-h3">Unlock the World of Knowledge and Creativity
-</h3>
-<p class="home-paragraph">
 
-At ArticleHub, we're passionate about the power of words and the magic of storytelling. Our platform is your gateway to a diverse world of articles, where you can read, write, and connect with like-minded individuals. Whether you're an avid reader, a budding writer, or a seasoned author, ArticleHub has something special in store for you.
+<h1  class="welcome-title"> Welcome to ArticleHub </h1>
+<div class="home-div">
+<h3 class=" h3s">Unlock the World of Knowledge and Creativity</h3>
+<p class="paragraphs">At ArticleHub, we're passionate about the power of 
+words and the magic of storytelling. Our platform is your 
+gateway to a diverse world of articles, where you can read, write, 
+and connect with like-minded individuals. Whether you're an avid reader, 
+a budding writer, or a seasoned author, ArticleHub has something special in store for you.
 </p>
+<div class="poligon-know">
+</div>
+</div>
 
-<h3 class="home-h3">Discover Engaging Content
+
+<div  class="home-div">
+<h3 class=" h3s">Discover Engaging Content
 </h3>
-
-<p class="home-paragraph">
+<p class="paragraphs">
 Dive into a treasure trove of articles spanning a wide range of topics, from technology and science to art and lifestyle. Our carefully curated collection ensures that there's something for everyone. Explore thought-provoking essays, in-depth tutorials, inspiring stories, and much more.
 </p>
-
-<h3 class="home-h3">Express Yourself
+<div class="poligon-art">
+</div>
+</div>
+<div class="home-div">
+<h3 class="h3s">Express Yourself
 </h3>
-<p class="home-paragraph">
+<p class="paragraphs">
 Are you itching to share your thoughts, experiences, or expertise with the world? ArticleHub makes it easy. Start your writing journey today. Craft beautiful articles, express your ideas, and reach a global audience. We provide the platform; you bring the creativity.
-</p>
-<h3 class="home-h3">
+</p >
+<div class="poligon">
+</div>
+</div>
+<div class="home-div">
+<h3 class="h3s">
 Connect and Collaborate
 </h3>
-<p class="home-paragraph">
+<p class="paragraphs" >
 Join a vibrant community of writers and readers. Follow your favorite authors, engage in discussions, and share your insights through comments and feedback. ArticleHub is not just a platform; it's a supportive ecosystem where connections and collaborations flourish.
 </p>
-<p class="home-paragraph">
+<div class="poligon">
+</div>
+</div>
+
+<div class="home-div"> 
+<h3 class="h3s">
 Stay Informed
+</h3>
+<p class="paragraphs">
 Stay updated with the latest articles and trends in your areas of interest. Our personalized recommendations ensure that you never miss out on the content that matters most to you. Customize your feed and make ArticleHub your information hub.
-<span>Your Journey Starts Here
-</span>
+</p>
+<div class="poligon">
+</div>
+</div>
+ <footer class="footer">
+<p class="para-footer">Your Journey Starts Here
+</p>
+<p class="para-footer-2">
 Ready to embark on a journey of discovery, creativity, and connection? Sign up for an account today and become a part of the ArticleHub family. Whether you're here to learn, to inspire, or to be inspired, ArticleHub is your destination for all things articles.
 Join us today and let your words shine on ArticleHub!
 </p>
-
-
-
-
-
-
-
-
-
-<%= link_to "Sign up",  new_user_registration_path, class:"signup-btn" %>
-<%= link_to "Log in",   new_user_session_path, class:"signin-btn"   %>
-
-
-
+<div class="btns-footer">
+<%= link_to "Sign up",  new_user_registration_path, class:"signup-btn-footer" %>
+<%= link_to "Log in",   new_user_session_path, class:"signin-btn-footer"   %>
 </div>
+</footer>
+
 </main>
 
