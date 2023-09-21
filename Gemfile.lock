@@ -86,6 +86,7 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
+    connection_pool (2.4.1)
     crass (1.0.6)
     date (3.3.3)
     debug (1.8.0)
@@ -97,6 +98,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    dockerfile-rails (1.5.9)
+      rails
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -181,6 +184,10 @@ GEM
       zeitwerk (~> 2.5)
     rainbow (3.1.1)
     rake (13.0.6)
+    redis (5.0.7)
+      redis-client (>= 0.9.0)
+    redis-client (0.17.0)
+      connection_pool
     regexp_parser (2.8.1)
     reline (0.3.5)
       io-console (~> 0.5)
@@ -208,6 +215,11 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sentry-rails (5.11.0)
+      railties (>= 5.0)
+      sentry-ruby (~> 5.11.0)
+    sentry-ruby (5.11.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -254,13 +266,17 @@ DEPENDENCIES
   capybara
   debug
   devise
+  dockerfile-rails (>= 1.5)
   importmap-rails
   jbuilder
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.5, >= 7.0.5.1)
+  redis (~> 5.0)
   rubocop (~> 1.56, >= 1.56.2)
   selenium-webdriver
+  sentry-rails (~> 5.11)
+  sentry-ruby (~> 5.11)
   sprockets-rails
   stimulus-rails
   turbo-rails
