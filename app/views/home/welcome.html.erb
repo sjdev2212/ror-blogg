@@ -1,5 +1,55 @@
-<h1>You are in User! Welcome <%= @user.name %></h1>
+<%= stylesheet_link_tag 'home_welcome', media: 'all' %>
+
+<main class="main-home">
+<div>
+<%= button_to "Log out",  destroy_user_session_path, method: :delete %>
+</div>
 <p class=" animated-div"><%= notice %></p>
 <p class="alert"><%= alert %></p>
+<div class="welcome-text">
+ <h1>You are in! Welcome <%= @user.name %></h1>
+</div>
+<section class="main-frame">
+<div class="list-left">
+<ul>
+<li>
+option1
+</li>
+<li>
+option2
+</li>
+<li>
+option3
+</li>
+</ul>
+</div>
+<section class="browser">
+<h2>
+Browse the Articles
+</h2>
+</section>
+<div class="list-right">
+<ul>
+<li>
+option1
+</li>
+<li>
+option2
+</li>
+<li>
+option3
+</li>
+</ul>
+</div>
 
-<%= button_to "Log out",  destroy_user_session_path, method: :delete %>
+</section>
+
+
+
+
+
+
+
+
+
+</main>
