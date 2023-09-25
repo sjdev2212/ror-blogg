@@ -1,5 +1,5 @@
 .main-home{
-    background-color: #404040;
+    background-color: #292b28;
     height: 50vw;
     border: 4px solid #6eeb83;
     border-radius: 5px;
@@ -13,7 +13,7 @@
 
 .welcome-text{
     display: flex;
-    color: #6eeb83;
+    color: #020202;
     font-size: 1.6vw;
     font-weight: bold;
     margin:  0 auto;
